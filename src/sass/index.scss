@@ -1,0 +1,117 @@
+﻿@charset "utf-8";
+//@import "media-queries";
+@import "my_reset";
+@import "function_mode";
+
+body{
+  position: relative;
+  margin: 0 auto;
+  max-width: 7.5rem;
+  //background-color: #001E4C;
+}
+
+#__bs_notify__{
+  width:100%!important;
+  font-size: 0.2em!important;
+}
+
+.mugen-scroll{
+  padding-top:.765rem;
+}
+.weui-loadmore{
+    margin: 0 auto!important;
+}
+
+
+%pos_center{
+  left: 50%;
+  transform: translate(-50%,0);
+  //transform: translateX(-50%);
+}
+
+%xy{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+%mc{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 100%;
+  overflow: visible;
+}
+
+.tips-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 300ms;
+  transform: translate3d(0,-100%,0);
+  &[data-state="show"]{
+    transform: translate3d(0,0,0);
+  }
+  &[data-state="hide"]{
+    transform: translate3d(0,-100%,0);
+  }
+
+  &[data-style="warn"]{
+    .tips-cont{
+      background-color: #ffe26d;
+      //color: #fff;
+    }
+  }  &[data-style="error"]{
+    .tips-cont{
+      background-color: #d00a0f;
+      color: #fff;
+    }
+  }
+  &[data-style="success"]{
+    .tips-cont{
+      background-color: #4fd02f;
+      color: #fff;
+    }
+  }
+  .tips-cont{
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+
+//@import "tipMask";
+
+//@import "button-mode";
+
+//@import "match-page";
+
+//@import "girl-page";
+
+//@import "integral-page";
+
+//@import "prize-page";
+
+//@import "mall-page";
+
+//@import "hot-mode";
+
+
+//动画时间
+//@import "animation-duration";
+
+//动画延迟时间
+//@import "animate-delay";
+
+//手机版转盘
+
+//@import "wap-prize-mode";

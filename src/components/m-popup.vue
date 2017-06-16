@@ -9,13 +9,13 @@
     </div>
     <input :value="value" style="display:none;">
  </div>
-  
+
 </template>
 
 <script>
 
   export default {
-    name: 'MiPopup',
+    name: 'm-popup',
     data () {
       return {
         popupState:false,
@@ -28,7 +28,7 @@
       if(this.value){
         this.show();
       }
-      
+
     }
     , props: {
       callback: {
@@ -43,17 +43,12 @@
         type:String,
         default:'bottom'
       }
-      // items:{
-      //   type:Array,
-      //   default:[]
-      // }
     }
     ,watch:{
       popupState(val){
         this.$emit('input', val);
       },
       value(val){
-        console.log('input-value:',val);
         this.popupState = val;
       }
     }
@@ -64,7 +59,7 @@
       fail(msg){
         this.$emit('fail',msg)
       }
-    
+
       , show(){
         this.popupState = !!1;
       }
@@ -108,7 +103,7 @@
 .popup-page{
   position: fixed;
   left:0;
-  
+
   z-index: 9;
   width: 100%;
   height: auto;

@@ -1,0 +1,35 @@
+body { -webkit-tap-highlight-color: transparent; }
+
+body, h1, h2, h3, h4, h5, p, ul, li, dl, dt, dd { margin: 0; padding: 0; }
+
+body, button, input, select, textarea { font-family: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif; -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis; /* 5 */ text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis /* 5 */ }
+
+a { text-decoration: none; outline: 0; }
+
+a, img { -webkit-touch-callout: none; }
+
+li { list-style: none; }
+
+img { display: block; border: 0 none; max-width: 100%; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+input, button { -webkit-appearance: none; }
+
+a, button, input, textarea, ul, li { -webkit-tap-highlight-color: transparent; }
+
+body { position: relative; margin: 0 auto; max-width: 7.5rem; }
+
+#__bs_notify__ { width: 100% !important; font-size: 0.2em !important; }
+
+.mugen-scroll { padding-top: .765rem; }
+
+.weui-loadmore { margin: 0 auto !important; }
+
+.tips-box { position: fixed; top: 0; left: 0; width: 100%; z-index: 999; -webkit-transition-property: -webkit-transform; transition-property: transform; -webkit-transition-property: -webkit-transform, -webkit-transform; transition-property: transform, -webkit-transform; -webkit-transition-duration: 300ms; transition-duration: 300ms; -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); }
+.tips-box[data-state="show"] { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.tips-box[data-state="hide"] { -webkit-transform: translate3d(0, -100%, 0); transform: translate3d(0, -100%, 0); }
+.tips-box[data-style="warn"] .tips-cont { background-color: #ffe26d; }
+.tips-box[data-style="error"] .tips-cont { background-color: #d00a0f; color: #fff; }
+.tips-box[data-style="success"] .tips-cont { background-color: #4fd02f; color: #fff; }
+.tips-box .tips-cont { background-color: #fff; color: #000; font-size: 14px; text-align: center; padding: 10px; }
+
+/*# sourceMappingURL=index.css.map */
