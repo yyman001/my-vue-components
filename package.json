@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
+    "dev2": "webpack-dashboard -- node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js"
   },
@@ -47,6 +48,7 @@
     "vue-template-compiler": "^2.2.6",
     "webpack": "^2.3.3",
     "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-dashboard": "^1.0.2",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
